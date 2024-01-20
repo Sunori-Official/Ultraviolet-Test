@@ -9,14 +9,14 @@ var fgms = ['1on1soccer.swf', '3dtanks.swf', 'abobosbigadventure.swf', 'achievem
 var flist = document.getElementById("flist");
 
 for (let item of fgms) {
-    let a = document.createElement("a");
+	let a = document.createElement("a");
 	a.href = "#";
 	a.textContent = item.split(".")[0];
 
-    a.onclick = function(e) {
-        e.preventDefault();
-        goFrame("/archive/gfiles/flash/index.html?swf=" + item, true);
-    }
+	a.onclick = function(e) {
+		e.preventDefault();
+		goFrame("/archive/gfiles/flash/index.html?swf=" + item, true);
+	}
 
-    flist.appendChild(a);
+	flist.appendChild(a);
 }
